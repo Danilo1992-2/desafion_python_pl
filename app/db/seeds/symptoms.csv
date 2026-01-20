@@ -1,0 +1,81 @@
+id,name,category,system
+1,Febre,Geral,Imunológico
+2,Calafrios,Geral,Imunológico
+3,Cansaço,Geral,Geral
+4,Fraqueza,Geral,Geral
+5,Perda de peso,Geral,Metabólico
+6,Ganho de peso,Geral,Metabólico
+7,Dor de cabeça,Dor,Neurológico
+8,Tontura,Neurológico,Neurológico
+9,Vertigem,Neurológico,Neurológico
+10,Desmaio,Neurológico,Neurológico
+11,Convulsão,Neurológico,Neurológico
+12,Confusão mental,Neurológico,Neurológico
+13,Perda de memória,Neurológico,Neurológico
+14,Tremores,Neurológico,Neurológico
+15,Formigamento,Neurológico,Neurológico
+16,Dormência,Neurológico,Neurológico
+17,Fraqueza muscular,Muscular,Musculoesquelético
+18,Paralisia,Neurológico,Neurológico
+19,Dor no peito,Dor,Cardiovascular
+20,Palpitação,Cardíaco,Cardiovascular
+21,Falta de ar,Respiratório,Respiratório
+22,Inchaço nas pernas,Edema,Cardiovascular
+23,Cianose,Pele,Cardiovascular
+24,Tosse,Respiratório,Respiratório
+25,Tosse seca,Respiratório,Respiratório
+26,Tosse com catarro,Respiratório,Respiratório
+27,Chiado no peito,Respiratório,Respiratório
+28,Dor de garganta,Respiratório,Respiratório
+29,Congestão nasal,Respiratório,Respiratório
+30,Coriza,Respiratório,Respiratório
+31,Espirros,Respiratório,Respiratório
+32,Rouquidão,Respiratório,Respiratório
+33,Dor abdominal,Gastrointestinal,Gastrointestinal
+34,Náusea,Gastrointestinal,Gastrointestinal
+35,Vômito,Gastrointestinal,Gastrointestinal
+36,Diarreia,Gastrointestinal,Gastrointestinal
+37,Constipação,Gastrointestinal,Gastrointestinal
+38,Azia,Gastrointestinal,Gastrointestinal
+39,Refluxo,Gastrointestinal,Gastrointestinal
+40,Estufamento,Gastrointestinal,Gastrointestinal
+41,Perda de apetite,Gastrointestinal,Gastrointestinal
+42,Aumento do apetite,Gastrointestinal,Gastrointestinal
+43,Sangue nas fezes,Gastrointestinal,Gastrointestinal
+44,Icterícia,Geral,Hepático
+45,Dor ao urinar,Urinário,Urinário
+46,Ardência ao urinar,Urinário,Urinário
+47,Aumento da frequência urinária,Urinário,Urinário
+48,Sangue na urina,Urinário,Urinário
+49,Incontinência urinária,Urinário,Urinário
+50,Dor lombar,Dor,Musculoesquelético
+51,Dor muscular,Dor,Musculoesquelético
+52,Dor articular,Dor,Musculoesquelético
+53,Rigidez articular,Musculoesquelético,Musculoesquelético
+54,Cãibras,Muscular,Musculoesquelético
+55,Espasmos musculares,Muscular,Musculoesquelético
+56,Visão turva,Visual,Sentidos
+57,Visão dupla,Visual,Sentidos
+58,Dor nos olhos,Visual,Sentidos
+59,Perda visual,Visual,Sentidos
+60,Dor de ouvido,Auditivo,Sentidos
+61,Zumbido,Auditivo,Sentidos
+62,Perda auditiva,Auditivo,Sentidos
+63,Perda de olfato,Sensorial,Sentidos
+64,Alteração do paladar,Sensorial,Sentidos
+65,Coceira,Pele,Dermatológico
+66,Vermelhidão,Pele,Dermatológico
+67,Manchas na pele,Pele,Dermatológico
+68,Erupções cutâneas,Pele,Dermatológico
+69,Bolhas,Pele,Dermatológico
+70,Descamação da pele,Pele,Dermatológico
+71,Queda de cabelo,Pele,Dermatológico
+72,Sede excessiva,Endócrino,Endócrino
+73,Fome excessiva,Endócrino,Endócrino
+74,Intolerância ao frio,Endócrino,Endócrino
+75,Intolerância ao calor,Endócrino,Endócrino
+76,Alteração de humor,Psicológico,Mental
+77,Ansiedade,Psicológico,Mental
+78,Depressão,Psicológico,Mental
+79,Insônia,Psicológico,Mental
+80,Sonolência excessiva,Psicológico,Mental

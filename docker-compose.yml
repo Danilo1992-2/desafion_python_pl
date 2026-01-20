@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: healthtech-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: shaman
+      POSTGRES_PASSWORD: shaman
+      POSTGRES_DB: healthtech
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: healthtech-ollama
+    restart: always
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    command: ["serve"]
+
+  ollama-init:
+    image: curlimages/curl:8.6.0
+    container_name: healthtech-ollama-init
+    depends_on:
+      - ollama
+    restart: "no"
+    entrypoint: ["/bin/sh", "-lc"]
+    command: >
+      echo "Waiting for Ollama..." &&
+      until curl -sf http://ollama:11434/api/tags >/dev/null; do sleep 1; done &&
+      echo "Pulling mistral:latest..." &&
+      curl -s http://ollama:11434/api/pull
+      -H "Content-Type: application/json"
+      -d "{\"name\":\"mistral:latest\"}" &&
+      echo "Done."
+
+  api:
+    build: .
+    container_name: healthtech-api
+    restart: always
+    depends_on:
+      - postgres
+      - ollama
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql+psycopg://shaman:shaman@postgres:5432/healthtech
+      OLLAMA_BASE_URL: http://ollama:11434
+    volumes:
+      - .:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+volumes:
+  postgres_data:
+  ollama_data:
