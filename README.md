@@ -129,12 +129,12 @@ API → tenta IA → se falhar → fallback rule-based
 ## 🏗️ Arquitetura do projeto
 
 app/
-├── api # Rotas FastAPI
-   ├── models # SQLAlchemy ORM
-   ├── schemas # Pydantic (validação)
-   ├── services # Rule-based e LLM-based
-   ├── db # Conexão, init e seeds
-   └── main.py # Bootstrap da aplicação
+├── api/             # Camada de API (rotas FastAPI)
+│   ├── models/      # Camada de persistência (SQLAlchemy ORM)
+│   ├── schemas/     # Camada de contrato (Pydantic)
+│   ├── services/    # Camada de regras de negócio (rule-based e LLM)
+│   ├── db/          # Conexão, inicialização e seeds do banco
+│   └── main.py      # Ponto de entrada da aplicação
 
 
 **Responsabilidades:**
@@ -196,7 +196,7 @@ Content-Type: application/json
         }
 ```
 
-###🐳 Como rodar o projeto (Docker — recomendado)
+### 🐳 Como rodar o projeto (Docker — recomendado)
 Pré-requisitos
     Docker
     Docker Compose
