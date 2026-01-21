@@ -198,13 +198,13 @@ Content-Type: application/json
 
 ### 🐳 Como rodar o projeto (Docker — recomendado)
 Pré-requisitos
-    Docker
-    Docker Compose
+Docker
+Docker Compose
 
 Subir o ambiente
-    docker compose up -d --build
+docker compose up -d --build
 
 Acessos
-    API: http://localhost:8000
-    Docs (Swagger): http://localhost:8000/docs
+API: http://localhost:8000
+Docs (Swagger): http://localhost:8000/docs
 
