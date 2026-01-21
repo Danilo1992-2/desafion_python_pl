@@ -128,13 +128,13 @@ API → tenta IA → se falhar → fallback rule-based
 
 ## 🏗️ Arquitetura do projeto
 
-app/
-├── api/             # Camada de API (rotas FastAPI)
-│   ├── models/      # Camada de persistência (SQLAlchemy ORM)
-│   ├── schemas/     # Camada de contrato (Pydantic)
-│   ├── services/    # Camada de regras de negócio (rule-based e LLM)
-│   ├── db/          # Conexão, inicialização e seeds do banco
-│   └── main.py      # Ponto de entrada da aplicação
+app/  
+├── api/             # Camada de API (rotas FastAPI)  
+│   ├── models/      # Camada de persistência (SQLAlchemy ORM)  
+│   ├── schemas/     # Camada de contrato (Pydantic)  
+│   ├── services/    # Camada de regras de negócio (rule-based e LLM)  
+│   ├── db/          # Conexão, inicialização e seeds do banco  
+│   └── main.py      # Ponto de entrada da aplicação  
 
 
 **Responsabilidades:**
@@ -166,7 +166,7 @@ app/
 POST /consultations
 Content-Type: application/json
     {
-    "patient_id": 1,
+    "patient_id": 2,
     "doctor_id": 1,
     "care_unit_id": 1,
     "symptoms": "dor de cabeça, fadiga",
@@ -197,14 +197,14 @@ Content-Type: application/json
 ```
 
 ### 🐳 Como rodar o projeto (Docker — recomendado)
-Pré-requisitos
+Pré-requisitos  
 Docker
 Docker Compose
 
-Subir o ambiente
+Subir o ambiente  
 docker compose up -d --build
 
-Acessos
+Acessos  
 API: http://localhost:8000
 Docs (Swagger): http://localhost:8000/docs
 
