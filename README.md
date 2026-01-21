@@ -130,11 +130,11 @@ API → tenta IA → se falhar → fallback rule-based
 
 app/
 ├── api # Rotas FastAPI
-├── models # SQLAlchemy ORM
-├── schemas # Pydantic (validação)
-├── services # Rule-based e LLM-based
-├── db # Conexão, init e seeds
-└── main.py # Bootstrap da aplicação
+   ├── models # SQLAlchemy ORM
+   ├── schemas # Pydantic (validação)
+   ├── services # Rule-based e LLM-based
+   ├── db # Conexão, init e seeds
+   └── main.py # Bootstrap da aplicação
 
 
 **Responsabilidades:**
@@ -194,9 +194,9 @@ Content-Type: application/json
             "strategy": "rule_based",
             "created_at": "2026-01-20T23:12:17.575785"
         }
+```
 
-
-🐳 Como rodar o projeto (Docker — recomendado)
+###🐳 Como rodar o projeto (Docker — recomendado)
 Pré-requisitos
     Docker
     Docker Compose
